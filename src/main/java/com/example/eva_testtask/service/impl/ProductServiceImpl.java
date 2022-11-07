@@ -23,10 +23,4 @@ public class ProductServiceImpl implements ProductService {
     public Product add(Product product) {
         return productDao.add(product);
     }
-
-    @Override
-    public Product getByName(String name) {
-        return productDao.getByName(name).orElseThrow(
-                () -> new RuntimeException("Can't get product by name " + name));
-    }
 }

@@ -8,7 +8,5 @@ import java.util.Optional;
 public interface ProductDao {
     Product add(Product product);
 
-    Optional<Product> getByName(String name);
-
     List<Product> getAll();
 }

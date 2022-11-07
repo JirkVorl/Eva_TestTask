@@ -7,6 +7,4 @@ public interface ProductService {
     List<Product> getAll();
 
     Product add(Product product);
-
-    Product getByName(String name);
 }
