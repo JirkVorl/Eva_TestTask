@@ -54,7 +54,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" + "id=" + id
+        return "ProductResponseMapper{" + "id=" + id
                 + ", name='" + name + '\''
                 + ", description='" + description + '\'' + '}';
     }

@@ -41,15 +41,6 @@ public class ProductDaoImpl implements ProductDao {
     }
 
     @Override
-    public Optional<Product> getByName(String name) {
-        try (Session session = factory.openSession()) {
-            return Optional.ofNullable(session.get(Product.class, name));
-        } catch (Exception e) {
-            throw new NoSuchElementException("Can`t find product with name " + name);
-        }
-    }
-
-    @Override
     public List<Product> getAll() {
         try (Session session = factory.openSession()) {
             return session.createQuery("FROM Product", Product.class).getResultList();
